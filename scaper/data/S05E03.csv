@@ -1,8 +1,8 @@
-panelist,team,assertion,possession,truthValue
-Katherine Parkinson,David,"I was so sure that Wombles were real, I used one in an example of a mammal in a GCSE Biology exam.",0,1
-David O'Doherty,David,"I am currently seeing a hypnotist to cure me of my compulsion to visit hypnotists.",0,0
-David O'Doherty,David,"They started a lost animals detective agency. ",0,1
-Katherine Parkinson,David,"Recycling man who put a note through her door telling her he thought she was eating too many takeaways. ",0,0
-David Mitchell,David,"He saved David from choking in Argos, after David swallowed one of Argos' little pens. ",0,0
-Louie Spence,Lee,"I make myself cry before every big dance performance to get rid of any excess water weight.",0,0
-Lee Mack,Lee,"I can tell the circumference of someone's head just by looking at them.",0,0
+round,panelist,team,assertion,possession,truthValue,guess
+0,Katherine Parkinson,David,"I was so sure that Wombles were real, I used one in an example of a mammal in a GCSE Biology exam.",0,1,0
+0,David O'Doherty,David,"I am currently seeing a hypnotist to cure me of my compulsion to visit hypnotists.",0,0,0
+1,David O'Doherty,David,"They started a lost animals detective agency. ",0,1,1
+1,Katherine Parkinson,David,"Recycling man who put a note through her door telling her he thought she was eating too many takeaways. ",0,0,0
+1,David Mitchell,David,"He saved David from choking in Argos, after David swallowed one of Argos' little pens. ",0,0,0
+2,Louie Spence,Lee,"I make myself cry before every big dance performance to get rid of any excess water weight.",0,0,0
+2,Lee Mack,Lee,"I can tell the circumference of someone's head just by looking at them.",0,0,0

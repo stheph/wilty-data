@@ -9,24 +9,13 @@ class Statement
     truthValue : boolean
     possession : boolean
 
-    constructor(panelist : string, team : string, assertion : string, truthValue : boolean)
+    constructor(panelist : string, team : string, assertion : string, truthValue : boolean, possession : boolean)
     {
-        this.team = team
+        this.panelist = panelist;
+        this.team = team;
         this.assertion = assertion;
         this.truthValue = truthValue;
-        const regexp : RegExp = /([^\(]+) \(Possession\)/g
-        if (regexp.test(panelist))
-        {
-            regexp.lastIndex = 0;
-            let match = regexp.exec(panelist);
-            this.panelist = match![1];
-            this.possession = true;
-        }
-        else
-        {
-            this.panelist = panelist;
-            this.possession = false;
-        }
+        this.possession = possession;
     }
 }
 
@@ -54,11 +43,29 @@ function getStatements ($: cheerio.Root, davidsTeam : string[], leesTeam : strin
             const regexp : RegExp = /^\<b\>([^:]+):\<\/b\> ([^\<]+) – \<font color=\"(green|red)\"\>(True|Lie)\<\/font\>/g;
             if (regexp.test(html))
             {
-                regexp.lastIndex = 0
-                let match = regexp.exec(html)
-                let team : string = davidsTeam.includes(match![1]) ? "David" : (leesTeam.includes(match![1]) ? "Lee" : "Rob");
-                let s : Statement = new Statement (match![1], team, match![2], match![4] == 'True' ? true : false)
-                out.push(s)
+                regexp.lastIndex = 0;
+                let match = regexp.exec(html);
+                let panelist : string = match![1];
+                let statement : string = match![2];
+                let truthValue : string = match![4];
+
+                const possession_regexp : RegExp = /([^\(]+) \(Possession\)/g;
+                if (possession_regexp.test(panelist))
+                {
+                    possession_regexp.lastIndex = 0;
+                    let possession_match = possession_regexp.exec(panelist);
+                    panelist = possession_match![1];
+                    let team : string = davidsTeam.includes(panelist) ? "David" : (leesTeam.includes(panelist) ? "Lee" : "Rob");
+                    let s : Statement = new Statement (panelist, team, statement, truthValue == 'True' ? true : false, true)
+                    out.push(s)
+                }
+                else
+                {
+                    let team : string = davidsTeam.includes(panelist) ? "David" : (leesTeam.includes(panelist) ? "Lee" : "Rob");
+                    let s : Statement = new Statement (panelist, team, statement, truthValue == 'True' ? true : false, false)
+                    out.push(s)
+                }
+
             }
         }
     )

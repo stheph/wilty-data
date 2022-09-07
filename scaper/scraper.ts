@@ -21,13 +21,21 @@ for (let series = SERIES_MIN; series <= SERIES_MAX; series++)
     for (let episode = EPISODE_MIN; episode <= EPISODE_MAX; episode++)
     {
         let url : string = `https://wilty.fandom.com/wiki/Series_${series},_Episode_${episode}`;
-        axios.get(url).then((response) =>
+        fs.access(
+            `data/S${series.toString().padStart(2, '0')}E${episode.toString().padStart(2, '0')}.html`,
+            (err) =>
             {
-                fs.writeFile(`data/S${series.toString().padStart(2, '0')}E${episode.toString().padStart(2, '0')}.html`, response.data, (err) => {}) 
+                if (err) {
+                    axios.get(url).then((response) =>
+                        {
+                            fs.writeFile(`data/S${series.toString().padStart(2, '0')}E${episode.toString().padStart(2, '0')}.html`, response.data, (err) => {}) 
+                        }
+                    ).catch((err) => {
+                        console.log(url + " : " + err.toString())
+                    })  
+                }
             }
-        ).catch((err) => {
-            console.log(url + " : " + err.toString())
-        }) 
+        )
     }
     
 }

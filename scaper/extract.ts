@@ -40,7 +40,10 @@ function getStatements ($: cheerio.Root, davidsTeam : string[], leesTeam : strin
         (_ :number, e : cheerio.Element) =>
         {
             let html : string | null = $(e).html()!;
-            const regexp : RegExp = /^\<b\>([^:]+):\<\/b\> ([^\<]+) – \<font color=\"(green|red)\"\>(True|Lie)\<\/font\>/g;
+            // Remove nonbreaking spaces
+            html = html.replace("&nbsp;", " ")
+
+            const regexp : RegExp = /^\<b\>([^:]+):\<\/b\> ([^\<]+)\s–\s\<font color=\"(green|red)\"\>(True|Lie)\<\/font\>/g;
             if (regexp.test(html))
             {
                 regexp.lastIndex = 0;

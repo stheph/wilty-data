@@ -3,3 +3,4 @@ scaper/data-format.txt
 scaper/test.html
 scaper/test.ts
 *.html
+scaper/test.js

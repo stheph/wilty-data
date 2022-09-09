@@ -1,9 +1,9 @@
-panelist,team,assertion,possession,truthValue
-Greg Davies,David,"For my first term at university, I rented a bathroom in a student house and slept in the bathtub every night.",0,0
-Phil Tufnell,Lee,"I am haunted by a recurring dream in which I'm a potato.",0,1
-Konnie Huq,David,"He brought lizards to Blue Peter and lost one which she later found in her handbag. ",0,0
-David Mitchell,David,"Had to hold Ian's hand on a plane throughout takeoff and landing because Ian was very scared of flying. ",0,0
-Greg Davies,David,"After a drunken night he woke up to Ian telling him he had been wrongly arrested on suspicion of murder. ",0,1
-Lee Mack,Lee,"I once had to show my boss an intimate area of my body to prove why I was late for work.",0,1
-David Mitchell,David,"I recently bought a cat, but took it back a day later because our personalities clashed.",0,0
-Greg Davies,David,"I used to try and scare school friends by planting a particular drawing in their pocket signifying death.",0,1
+round,panelist,team,assertion,possession,truthValue,guess
+0,Greg Davies,David,"For my first term at university, I rented a bathroom in a student house and slept in the bathtub every night.",0,0,1
+0,Phil Tufnell,Lee,"I am haunted by a recurring dream in which I'm a potato.",0,1,0
+1,Konnie Huq,David,"He brought lizards to Blue Peter and lost one which she later found in her handbag. ",0,0,1
+1,David Mitchell,David,"Had to hold Ian's hand on a plane throughout takeoff and landing because Ian was very scared of flying. ",0,0,0
+1,Greg Davies,David,"After a drunken night he woke up to Ian telling him he had been wrongly arrested on suspicion of murder. ",0,1,0
+2,Lee Mack,Lee,"I once had to show my boss an intimate area of my body to prove why I was late for work.",0,1,1
+2,David Mitchell,David,"I recently bought a cat, but took it back a day later because our personalities clashed.",0,0,0
+2,Greg Davies,David,"I used to try and scare school friends by planting a particular drawing in their pocket signifying death.",0,1,0

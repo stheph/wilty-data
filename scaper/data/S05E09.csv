@@ -1,10 +1,10 @@
-panelist,team,assertion,possession,truthValue
-Mackenzie Crook,Rob,"When I won the Pirates of the Caribbean Sandcastle Competition, Keith Richards was so angry he stamped on my drawbridge and threw Johnny Depp's bucket in the sea.",0,0
-Miranda Hart,Rob,"Last year whilst house-sitting for friends, I had to shout for help for two hours when I got stuck in their children's Wendy house.",0,0
-Bill Turnbull,Rob,"I have drunk rum from a human skull.",0,1
-Rebecca Front,Rob,"I have vomited in Cliff Richard's hedge.",0,1
-Sarah Millican,Rob,"I once ruined a christening party when I was overheard calling the baby ugly on a baby monitor.",0,0
-Nick Hewer,Rob,"Possession: This is a hat from my hat collection. I wear one whenever I throw a dinner party.",0,1
-Katherine Parkinson,Rob,"Me and my husband have a fake laugh that we do at parties to signal when it's time to leave.",0,0
-Bill Turnbull,Rob,"Possession: This is my conversation book. In it I've written a list of topics that I refer to should I ever run out of things to talk about.",0,0
-Rob Brydon,Rob,"For one week I appeared in a Dear Deidre photo casebook in The Sun newspaper.",0,0
+round,panelist,team,assertion,possession,truthValue,guess
+0,Mackenzie Crook,David,"When I won the Pirates of the Caribbean Sandcastle Competition, Keith Richards was so angry he stamped on my drawbridge and threw Johnny Depp's bucket in the sea.",0,0,1
+0,Miranda Hart,Lee,"Last year whilst house-sitting for friends, I had to shout for help for two hours when I got stuck in their children's Wendy house.",0,0,0
+0,Bill Turnbull,Lee,"I have drunk rum from a human skull.",0,1,0
+0,Rebecca Front,David,"I have vomited in Cliff Richard's hedge.",0,1,1
+0,Sarah Millican,Lee,"I once ruined a christening party when I was overheard calling the baby ugly on a baby monitor.",0,0,1
+0,Nick Hewer,Lee,"This is a hat from my hat collection. I wear one whenever I throw a dinner party.",1,1,1
+0,Katherine Parkinson,David,"Me and my husband have a fake laugh that we do at parties to signal when it's time to leave.",0,0,1
+0,Bill Turnbull,Lee,"This is my conversation book. In it I've written a list of topics that I refer to should I ever run out of things to talk about.",1,0,0
+0,Rob Brydon,Rob,"For one week I appeared in a Dear Deidre photo casebook in The Sun newspaper.",0,0,0

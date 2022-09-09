@@ -1,9 +1,9 @@
-panelist,team,assertion,possession,truthValue
-Sarah Millican,Lee,"I once wet myself in a car and then blamed it on my friend's dog.",0,1
-Frank Skinner,David,"I was once driven to A&amp;E in an ice cream van. In place of a siren, the driver turned on the musical chimes.",0,0
-Bill Oddie,David,"I was saved from drowning by a character from the children's show Rainbow.",0,1
-Jon Richardson,Lee,"They crashed into each other while they were both doing their driving tests. ",0,0
-Sarah Millican,Lee,"They tricked the newspapers into reporting that she had been left under a spell from a hypnotist. ",0,1
-Lee Mack,Lee,"Hotel receptionist that he had to phone when he found a peacock in his room. ",0,0
-Lee Mack,Lee,"When I'm at home, I amuse myself by shaving only half my face and doing that thing where you have a conversation between two people.",0,1
-Jon Richardson,Lee,"This is the emergency kit that I keep in my car at all times.",1,1
+round,panelist,team,assertion,possession,truthValue,guess
+0,Sarah Millican,Lee,"I once wet myself in a car and then blamed it on my friend's dog.",0,1,1
+0,Frank Skinner,David,"I was once driven to A&amp;E in an ice cream van. In place of a siren, the driver turned on the musical chimes.",0,0,0
+0,Bill Oddie,David,"I was saved from drowning by a character from the children's show Rainbow.",0,1,1
+1,Jon Richardson,Lee,"They crashed into each other while they were both doing their driving tests. ",0,0,0
+1,Sarah Millican,Lee,"They tricked the newspapers into reporting that she had been left under a spell from a hypnotist. ",0,1,1
+1,Lee Mack,Lee,"Hotel receptionist that he had to phone when he found a peacock in his room. ",0,0,0
+2,Lee Mack,Lee,"When I'm at home, I amuse myself by shaving only half my face and doing that thing where you have a conversation between two people.",0,1,0
+2,Jon Richardson,Lee,"This is the emergency kit that I keep in my car at all times.",1,1,0
